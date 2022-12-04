@@ -1,37 +1,36 @@
-import React from 'react'
-import logo from '../../assets/logo-dio.png';
+import * as React from "react";
+import logo from "../../assets/images/logo-dio.png"
+import { Button } from "../../components/Button"
 
-import { Button } from '../Button';
+import { 
+    Container,
+    Row,
+    Wrapper,
+    BuscarInputContainer,
+    Menu,
+    MenuRight,
+    Input,
+} from "./styles";
 
-import { Container, Wrapper, BuscarInputContainer, Input, Row, Menu, MenuRight, UserPicture} from './styles';
 
-const Header = ({autenticado}) => {
+const Header = () => {
   return (
     <Wrapper>
-      <Container>
-          <Row>
-            <img src={logo} alt="Logo da dio"/>
-            {autenticado ? (
-              <>
-               <BuscarInputContainer>
-                <Input placeholder='Buscar...'/>
-               </BuscarInputContainer>
+        <Container>
+            <Row>
+                <img src={ logo } alt="Logo da Dio"></img>
+                <BuscarInputContainer>
+                    <Input placeholder="Buscar..."></Input>
+                </BuscarInputContainer>
                 <Menu>Live Code</Menu>
                 <Menu>Global</Menu>
-              </>
-            ) : null}
-          </Row>
-          <Row>
-              {autenticado ? (
-                <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4"/>
-              ) : (
-              <>
-                <MenuRight href="/">Home</MenuRight>
-                <Button title="Entrar" />
-                <Button title="Cadastrar" />
-              </>)}
-          </Row>
-      </Container>
+            </Row>
+            <Row>
+                <MenuRight href="#">Home</MenuRight>
+                <Button title="Entrar"></Button>
+                <Button title="Cadastrar"></Button>
+            </Row>
+        </Container>
     </Wrapper>
   )
 }

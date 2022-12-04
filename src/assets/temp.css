@@ -1,0 +1,156 @@
+ButtonContainer {
+    background: #565656;
+    border-radius: 22px;
+    position: relative;
+
+    color: #ffff;
+    padding: 2px 12px;
+    min-width: 120px;
+    width: 100%; 
+}
+
+.ButtonContainer::variant{
+min-width: 167px;
+height: 33px;
+
+background: #E4105D;
+
+content: '';
+position: absolute;
+border: 1px solid #E4105D;
+top: -5px;
+left: -6px;
+width: calc(100% + 10px);
+height: calc(100% + 10px);
+border-radius: 22px;
+}
+
+.Header.Container {
+    width: 100%;
+    max-width: 80%;
+    height: 47px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Wrapper {
+    background-color: #151515;
+    width: 100%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BuscarInputContainer {
+    width: 175px;
+    height: 30px;
+    background: #2D2D37;
+    border-radius: 8px;
+    padding: 2px 5px;
+    margin: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffff;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.MenuRight {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffff;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.UserPicture {
+    width: 32px;
+    height: 32px;
+    border-radius: 22px;
+    border: 2px solid #ffff;
+}
+
+.Input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    color: #ffff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+body {
+    background-color: #1E192C;
+    color: #ffff;
+}
+
+.Home.Container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home.Title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    width: 320px;
+    margin-bottom: 20px;
+    line-height: 44px;
+
+    color: #ffff;
+}
+
+.Home.TitleHighLight {
+    color: #E4105D;
+}
+
+.Home.TextContent {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 420px;
+    margin-bottom: 20px;
+    line-height: 22px;
+
+    color: #ffff;
+}

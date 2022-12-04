@@ -1,3 +1,8 @@
+
+Repositório do projeto: https://github.com/digitalinnovationone/trilha-react-desafio-3
+Figma do projeto: https://www.figma.com/file/fvjQQNtqaUdpuNixvCZVav/DIO-CLONE?node-id=1%3A2&t=XzmAb8h6iURRl1e0-0
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

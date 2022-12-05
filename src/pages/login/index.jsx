@@ -1,10 +1,41 @@
 import { Link } from "react-router-dom"
+import { MdEmail, MdLock } from "react-icons/md"
 
-export function Login() {
+import { Button } from "../../components/Button"
+import { Header } from "../../components/Header"
+import { Input } from "../../components/Input"
+
+import { Container, Title, TitleLogin, EsqueciTxt, CriarTxt, Wrapper, Column, Row, SubTitleLogin} from "./styles"
+
+const Login = () => {
     return (
         <>
-        <h1>Login</h1>
-        <Link to={"/"}>Voltar para home</Link>
+        <Header></Header>
+        <Container>
+            <Column>
+                <Title>
+                    A plataforma para você aprender com experts, dominar as principais tecnologias 
+                    e entrar mais rápido nas empresas mais desejadas.
+                </Title>
+            </Column>
+            <Column>
+                <Wrapper>
+                   <TitleLogin>Faça seu cadastro</TitleLogin>
+                   <SubTitleLogin>Faça seu login e make the change._</SubTitleLogin>
+                   <form action="">
+                        <Input leftIcon={<MdEmail/> } placeholder="E-mail" type="text" />
+                        <Input leftIcon={<MdLock/>} placeholder="Password" type="password" />
+                        <Button title="Entrar" variant="secondary"></Button>
+                   </form>
+                   <Row>
+                        <EsqueciTxt>Esqueci minha senha</EsqueciTxt>
+                        <CriarTxt>Criar conta</CriarTxt>
+                   </Row>
+                </Wrapper>
+            </Column>
+        </Container>
         </>
     )
 }
+
+export { Login }

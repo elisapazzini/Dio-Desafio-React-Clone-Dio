@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.main`
+export const FeedContainer = styled.main`
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -17,8 +17,9 @@ export const Title = styled.h3`
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
     margin-bottom: 24px;
+
+    color: #FFFFFFFF;
 `
 
 export const TitleHighlight = styled.h3`
@@ -27,15 +28,15 @@ export const TitleHighlight = styled.h3`
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF70;
     margin-bottom: 24px;
 
+    color: #FFFFFF70;
 `
 
 export const Column = styled.div`
-    flex:${({flex}) => flex};
+    flex:${({flex}) => flex} //proporcao dentro do flex box - qnt maior o peso, maior o elemento fica na tela
     padding-right: 24px;
-
 `
+
 
 

@@ -3,7 +3,7 @@
     border-radius: 22px;
     position: relative;
 
-    color: #ffff;
+    color: #FFFFFF;
     padding: 2px 12px;
     min-width: 120px;
     width: 100%; 
@@ -15,14 +15,16 @@
 
     background: #E4105D;
 
-    content: '';
-    position: absolute;
-    border: 1px solid #E4105D;
-    top: -5px;
-    left: -6px;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    border-radius: 22px;
+    /* &::after {
+        content: '';
+        position: absolute;
+        border: 1px solid #E4105D;
+        top: -5px;
+        left: -6px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        border-radius: 22px;
+    } */
 }
 
 .Header.Container {
@@ -77,7 +79,7 @@
     font-style: normal;
     font-size: 12px;
     line-height: 25px;
-    color: #ffff;
+    color: #FFFFFF;
     margin-right: 12px;
     text-decoration: none;
 }
@@ -87,7 +89,7 @@
     font-style: normal;
     font-size: 12px;
     line-height: 25px;
-    color: #ffff;
+    color: #FFFFFF;
     margin-right: 12px;
     text-decoration: none;
 }
@@ -96,14 +98,14 @@
     width: 32px;
     height: 32px;
     border-radius: 22px;
-    border: 2px solid #ffff;
+    border: 2px solid #FFFFFF;
 }
 
 .Input {
     background: transparent;
     flex: 1;
     border: 0;
-    color: #ffff
+    color: #FFFFFF
 }
 
 *{
@@ -114,7 +116,7 @@
 
 body {
     background-color: #1E192C;
-    color: #ffff;
+    color: #FFFFFF;
 }
 
 .Home.Container {
@@ -138,7 +140,7 @@ body {
     margin-bottom: 20px;
     line-height: 44px;
 
-    color: #ffff;
+    color: #FFFFFFFF;
 }
 
 .Home.TitleHighLight {
@@ -154,7 +156,7 @@ body {
     margin-bottom: 20px;
     line-height: 22px;
 
-    color: #ffff;
+    color: #FFFFFFFF;
 }
 
 .InputContainer {
@@ -174,7 +176,7 @@ body {
 
 .InputText {
     background-color: transparent;
-    color: #ffff;
+    color: #FFFFFFFF;
     border: 0;
     height: 30px;
 }
@@ -185,4 +187,176 @@ body {
     margin-right: 10px;
     display: flex;
     flex-direction: column-reverse;
+}
+
+.CardContainer {
+    width: 100%;
+    background-color: #3B4651;
+    position: relative;
+    margin-bottom: 24px;
+}
+.ImageBackground {
+    width: 100%;
+    height: 180px;
+}
+.Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.UserInfo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+
+    color: #FFFFFFFF;
+
+    /* div {
+        margin-left: 12px;
+    }
+
+    h4 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    } */
+}
+
+.UserPicture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFFFF;
+}
+
+.PostInfo {
+    color: #FFFFFFFF;
+    margin-bottom: 12px;
+
+    /* h4 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    } */
+}
+
+.HasInfo {
+    margin-top: 12px;
+/* 
+    h4 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+
+        color: #FFFFFF80;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    } */
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.UserPicture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFFFF;
+    margin-right: 12px;
+}
+
+.NameText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.Progress {
+    width: 180px;
+    height: 6px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+
+    /* &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 6px;
+        border-radius: 3px;
+        background-color: ##23DD7A;
+        width: ${({percentual}) => percentual}%;
+    } */
+}
+
+.FeedContainer {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Feed.Title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+
+    color: #FFFFFFFF;
+}
+
+.Feed.TitleHighLight {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+
+    color: #FFFFFF70;
+}
+
+.Feed.Column {
+    padding-right: 24px;
 }

@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.div`
-    display:flex;
+export const UserInfoContainer = styled.div`
+    display: flex;
     flex-direction: row;
     margin-bottom: 24px;
-` 
+`
 
 export const UserPicture = styled.img`
     width: 32px;
     height: 32px;
-    border-radius: 22px;
+    border-radius: 50%;
     border: 3px solid #FFFFFF;
     margin-right: 12px;
 `
@@ -20,8 +20,7 @@ export const NameText = styled.div`
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
-` 
+`
 
 export const Progress = styled.div`
     width: 180px;
@@ -38,6 +37,7 @@ export const Progress = styled.div`
         width: ${({percentual}) => percentual}%;
         height: 6px;
         border-radius: 3px;
+        width: 35%;
         background-color: #23DD7A;
     }
-` 
+`

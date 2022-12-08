@@ -1,39 +1,36 @@
-import React from 'react'
-import { Card } from '../../components/Card';
-import { UserInfo } from '../../components/UserInfo';
+import { Link } from "react-router-dom"
 
-import { Header } from '../../components/Header';
+import { Header } from "../../components/Header"
+import { Card } from "../../components/Card"
+import { UserInfo } from "../../components/UserInfo"
+import { FeedContainer, Title, TitleHighlight, Column } from "./styles"
 
-import { Container, Column, Title, TitleHighlight } from './styles';
 
 const Feed = () => {
-  return (
-    <>
-        <Header autenticado={true}/>
-        <Container>
+    return (
+        <>
+        <Header autenticado={true}></Header>
+        <FeedContainer>
             <Column flex={3}>
                 <Title>Feed</Title>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
             </Column>
             <Column flex={1}>
-              <TitleHighlight> # RANKING 5 TOP DA SEMANA </TitleHighlight>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={25}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={65}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={45}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={72}/>
+            <TitleHighlight># RANKING 5 TOP DA SEMANA</TitleHighlight>
+            <UserInfo name="Elisa Pazzini" image="https://avatars.githubusercontent.com/u/105680356?v=4" percentual={35}></UserInfo>
+            <UserInfo name="Elisa Pazzini" image="https://avatars.githubusercontent.com/u/105680356?v=4" percentual={50}></UserInfo>
+            <UserInfo name="Elisa Pazzini" image="https://avatars.githubusercontent.com/u/105680356?v=4" percentual={75}></UserInfo>
+            <UserInfo name="Elisa Pazzini" image="https://avatars.githubusercontent.com/u/105680356?v=4" percentual={15}></UserInfo>
+            <UserInfo name="Elisa Pazzini" image="https://avatars.githubusercontent.com/u/105680356?v=4" percentual={5}></UserInfo>
             </Column>
-        </Container>
-    </>
-  )
+        </FeedContainer>
+        </>
+    )
 }
 
-export { Feed }; 
+export { Feed }

@@ -3,34 +3,39 @@ import logo from "../../assets/images/logo-dio.png"
 import { Button } from "../../components/Button"
 
 import { 
-    Container,
-    Row,
-    Wrapper,
-    BuscarInputContainer,
-    Menu,
-    MenuRight,
-    Input,
+    HeaderContainer, Row, Wrapper, BuscarInputContainer,
+    Menu, MenuRight,Input, UserPicture,
 } from "./styles";
 
 
-const Header = () => {
+const Header = ({autenticado}) => {
   return (
     <Wrapper>
-        <Container>
+        <HeaderContainer>
             <Row>
                 <img src={ logo } alt="Logo da Dio"></img>
-                <BuscarInputContainer>
-                    <Input placeholder="Buscar..."></Input>
-                </BuscarInputContainer>
-                {/* <Menu>Live Code</Menu>
-                <Menu>Global</Menu> */}
+                {autenticado ? (
+                    <>
+                        <BuscarInputContainer>
+                            <Input placeholder="Buscar..."></Input>
+                        </BuscarInputContainer>
+                        <Menu>Live Code</Menu>
+                        <Menu>Global</Menu>
+                    </>
+                ): null}
             </Row>
             <Row>
-                <MenuRight href="#">Home</MenuRight>
-                <Button title="Entrar"></Button>
-                <Button title="Cadastrar"></Button>
+                {autenticado ? (
+                    <UserPicture src="https://avatars.githubusercontent.com/u/105680356?v=4"></UserPicture>
+                ) : (
+                    <>
+                        <MenuRight href="#">Home</MenuRight>
+                        <Button title="Entrar"></Button>
+                        <Button title="Cadastrar"></Button>
+                    </>
+                )}
             </Row>
-        </Container>
+        </HeaderContainer>
     </Wrapper>
   )
 }

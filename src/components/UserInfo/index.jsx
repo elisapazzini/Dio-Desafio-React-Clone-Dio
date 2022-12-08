@@ -1,17 +1,17 @@
-import React from 'react'
+import * as React from "react";
 
-import { Container, NameText, Progress, UserPicture} from './styles';
+import { UserInfoContainer, UserPicture, NameText, Progress } from "./styles";
 
-const UserInfo = ({nome,image, percentual}) => {
-  return (
-    <Container>
-        <UserPicture src={image} />
-        <div>
-            <NameText>{nome}</NameText>
-            <Progress percentual={percentual} />
-        </div>
-    </Container>
-  )
+const UserInfo = ({name, image, percentual}) => {
+    return (
+        <UserInfoContainer>
+            <UserPicture src={image}></UserPicture>
+            <div>
+                <NameText>{name}</NameText>
+                <Progress percentual = {percentual}></Progress>
+            </div>
+        </UserInfoContainer>
+    )
 }
 
 export { UserInfo }

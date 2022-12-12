@@ -1,34 +1,22 @@
 import styled from "styled-components";
 
 export const InputContainer = styled.div`
-    max-width: 275px;
     width: 100%;
-    height: 30px;
-    border-bottom: 1px solid #3B3450;
+    height: 75px;
 
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-`
+    align-items: center;
+    justify-content: flex-end;
 
-export const IconContainer = styled.div`
-    color: #8647AD;
-    position: absolute;
-    margin-right: 10px;
-`
+    input{
+        width: 100%;
+        height: 75px;
+        background-color: mediumvioletred;
+        border: 0;
+        padding: 0 10px;
 
-export const InputText = styled.input`
-    background-color: transparent;
-    color: #ffff;
-    width: 100%;
-    border: 0;
-    height: 30px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    
+        color: #ffff;
+        font-size: 32px;
+        text-align: right;
+    }
 `
